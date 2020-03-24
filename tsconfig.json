@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "esnext",
     "lib": [
       "dom",
       "dom.iterable",
@@ -19,6 +19,13 @@
     "noEmit": true,
     "jsx": "react"
   },
+  "extends": "./paths.json",
+  "exclude": [
+    "node_modules",
+    "build",
+    "dist",
+    "public"
+  ],
   "include": [
     "src"
   ]
